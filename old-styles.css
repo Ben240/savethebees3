@@ -1,0 +1,119 @@
+/* General Styling */
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title {
+  color: orange;
+  text-shadow: 1px 1px 2px black, 0 0 25px #ffe600, 0 0 5px #ffae00;
+}
+
+.list {
+  border: dotted;
+  margin: 30px 0px 30px 0px;
+}
+
+.me {
+  width: 100%;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 50px;
+}
+
+div.saveit {
+  position: relative
+}
+
+.button {
+  font-style: italic;
+}
+
+.img-container {
+  position: relative;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 350px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+}
+
+.img-title {
+  padding: 15px;
+  text-align: center;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: block;
+  color: #000;
+  background-color: #f8f8f8;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.menu:hover {
+  background-color: rgb(255, 136, 0);
+  color: white;
+}
+
+.point {
+  list-style-type: decimal;
+}
+
+/* Mobile: Tablet + Smartphone View */
+
+@media only screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  .title {
+    color: blue;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+  }
+  .point {
+    list-style-type: none;
+  }
+  .logo {
+    align-content: center;
+  }
+  .me {
+    max-width: 350px;
+  }
+  .list {
+    border: solid;
+  }
+}
+
+/* small screens / phone view */
+
+@media only screen and (max-width: 420px) {
+  .title {
+    color: green;
+  }
+}
+
+/* Desktop view */
+
+@media only screen and (min-width: 769px) {
+  .menu {
+    width: 200px;
+  }
+  .list {
+    border: none;
+  }
+  .me {
+    max-width: 350px;
+  }
+}
